@@ -3,3 +3,7 @@ const defaultCocktails = [{id: 1, name: 'Gin and Tonic'}, {id: 2, name: 'Old Fas
 export function fetchCocktails() {
   return {type: 'FETCH_COCKTAILS', payload: defaultCocktails};
 }
+
+export function selectCocktail(cocktailName) {
+  return {type: 'SELECT_COCKTAIL', payload: cocktailName};
+}
